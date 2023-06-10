@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+
+    <title>Age Calculator: Clinto Bean's Version</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <main>
+      <div id="calculator">
+        <div class="input-wrapper">
+          <div class="input-day-label label">day</div>
+          <div class="input-month-label label">month</div>
+          <div class="input-year-label label">year</div>
+          <input type="number" id="input-day" placeholder="DD" />
+          <input type="number" id="input-month" placeholder="MM" />
+          <input type="number" id="input-year" placeholder="YYYY" />
+          <div id="day-error"></div>
+          <div id="month-error"></div>
+          <div id="year-error"></div>
+        </div>
+        <div class="output-wrapper">
+          <button class="submit" type="submit" id="submit">
+            <div class="arrow-down"></div>
+          </button>
+
+          <div class="outputs">
+            <div class="output-year"><span id="year">--</span> years</div>
+            <div class="output-month"><span id="month">--</span> months</div>
+            <div class="output-day"><span id="day">--</span> days</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <aside>
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#ee">Clinto Bean</a>.
+      </footer>
+    </aside>
+  </body>
+</html>
